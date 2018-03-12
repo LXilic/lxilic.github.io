@@ -1,77 +1,282 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-        
-        .image {
-            width: 75%;
-        }
-        .default {
-            font-size: 1.1em;
-            font-family: arial;
-        }
-        
-        * {
-            font-size: 1.1em;
-            font-family: arial;
-        }
-        </style>
-        <title>Aleksandar ILIC</title>
-    </head>
-    <body>
-        <h1>Aleksandar ILIC - Homework 4</h1>
-        <form>
-        <input type="text" name="name" placeholder="First name/Last name"/>
-        </form>
-        <hr>
-        <form>
-            <select>
-                <option value="select">Select the state</option>
-                <option value="illinois">IL</option>
-                <option value="new jersey">NJ</option>
-                <option value="iowa">IO</option>
-                <option value="colorado">CO</option>
-                <option value="illinois">IL</option>
-                <option value="wisconsin">WI</option>
-                
-                <o
-            </select>
-        </form>
-        <hr>
-        <form>
-            <input type="text" class="default" name="course" list="CS Course list" placeholder="Choose a course"/>
-            <datalist id=CSCourses>
-                <option value="CS107"></option>
-                <option value="CS109"></option>
-                <option value="CS111"></option>
-                <option value="CS141"></option>
-                <option value="CS151"></option>
-            </datalist>
-            <a href="https://www.cs.uic.edu/~grad/CS_Flowchart.pdf">UIC Computer Science Undergraduate Prerequisite Flow-Chart</a>
-        </form>
-        <hr class="default">
-        <input type="radio" name="year" value="freshman">Freshman</br>
-        <input type="radio" name="year" value="sophomore">Sophomore</br>
-        <input type="radio" name="year" value="junior">Junior</br>
-        <input type="radio" name="year" value="senior">Senior</br>
-        <input type="radio" name="year" value="grad">Grad</br>
-        <hr>
-        <input type="checkbox" name="expenses" value="car"> Car<br>
-        <input type="checkbox" name="expenses" value="phone"> Phone<br>
-        <input type="checkbox" name="expenses" value="lunch"> Lunch<br>
-        <hr>
-        <h2 class="default">Answers: </h2>
-        <ol>
-            <li>Every element is wrapped within the Box and this model helps developer select, and customize the properties.</li>
-            <li>To be a "block-level" element means being surrounded by new lines on top and bottom, and that the specific element takes up the complete width of the parent parent function. </li>
-            <li>Examples of "block-level" elements tag by default: p1, h1, and h2</li>
-            <li>An inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.</li>
-            <li>Examples of inline elements are form input, and button.</li>
-            <li>CSS can be be included internally and externally. CSS can be be part of the html file, or it can be the external file that is called inside of HTML. </li>
-            <li>The function of the selector is to select and modify the specific object. </li>
-            <li>To set the color #0000FF n CSS we use the following instructions is:
-              body {background-color: #0000FF;}</li>
-            <li><img class="image" src="https://cppm.uic.edu/images/master_plan/Image%20(6).jpg"></li>
-        </ol>
-    </body>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aleksandar ILIC - Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-4 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Aleksandar
+            <span class="text-primary">Ilic</span>
+          </h1>
+          <div class="subheading mb-5">750 South Halsted Street · Chicago, IL 60607
+            <a href="mailto:name@email.com">ailic@uic.edu</a>
+          </div>
+          <p class="mb-5">Currently pursuing a Bachelor of Science (BS) at University of Chicago, College of Engineering. Majoring in Computer Science and getting Minor in Mathematics. I've been using C/C++, HTML, CSS, jQuery, and Java in my courses.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-4 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-4">Experience</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-4">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Real-Estate Broker</h3>
+              <div class="subheading mb-3">Cagan's Realty</div>
+              <p>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Jun 2016- Present</span>
+            </div>
+            
+                   <div class="resume-item d-flex flex-column flex-md-row mb-4">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Real-Estate Broker</h3>
+              <div class="subheading mb-3">Keller Williams Realty Partners</div>
+              <p>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Feb 2016- Jun 2016</span>
+            </div>
+            
+          <div class="resume-item d-flex flex-column flex-md-row mb-4">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">CEO/Owner</h3>
+              <div class="subheading mb-3">US Freight Force, Corp.</div>
+              <p>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Nov 2015 - June 2016</span>
+            </div>
+            
+            
+            <!--
+             <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Real-Estate Broker</h3>
+              <div class="subheading mb-3">Keller Williams Realty Partners</div>
+              <p>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Feb 2016- Jun 2016</span>
+               <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">US FF</h3>
+              <div class="subheading mb-3">CEO/Owner</div>
+              <p>.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Nov 2015 - June 2016</span>
+          </div>
+          -->
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Illinois at Chicago</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Computer Science</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2017-Present</span>
+            </div>
+          </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Real-estate, Web-Development, App development, Project Managment, Classic Cars, Yoga and Swimming</p>
+          </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              N/A</li>
+            <li>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
 </html>
